@@ -179,7 +179,7 @@ def train(
         if max(tol_g, tol_f) < tol:
             break
     else:
-        _logger.warning("ipca did not converged")
+        _logger.warning("ipca did not converge")
 
     gamma = pd.DataFrame(gamma, index=Z.columns, columns=factor_names)
     factors = pd.DataFrame(factors, index=ix.levels[0], columns=factor_names)
